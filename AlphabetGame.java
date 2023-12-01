@@ -1,5 +1,7 @@
 // Program 2
-// Alphabet War Game
+// Alphabet War Game - Battle between the letters of the alphabet
+
+// Declaration of private integer variables to hold the strength of each letter
 
 public class AlphabetGame {
     private int strengthW = 4;
@@ -11,11 +13,16 @@ public class AlphabetGame {
     private int strengthD = 2;
     private int strengthZ = 1;
 
+    // Constructor Overloading
+
     // Default constructor
+    // Initializes the strength of the letters to their default values
     public AlphabetGame() {
     }
 
-    // Parameterized Constructor to allow the customization of letter strengths
+    // Parameterized Constructor
+    // To allow the customization of letter strengths by accepting values of for each letter's strength
+
     public AlphabetGame(int strengthW, int strengthP, int strengthB, int strengthS,
                            int strengthM, int strengthQ, int strengthD, int strengthZ) {
         this.strengthW = strengthW;
@@ -28,7 +35,12 @@ public class AlphabetGame {
         this.strengthZ = strengthZ;
     }
 
+    // Figuring out who wins in different ways using method overloading
+
     // Method to determine the winner using one word
+    // It takes the single word and calculates the strength of the left and right sides based on the letters in the word
+
+
     public String determineWinner(String word) {
         int leftStrength = 0;
         int rightStrength = 0;
@@ -70,6 +82,8 @@ public class AlphabetGame {
     }
 
     // Method to determine the winner using separate left and right words
+    // It takes two words representing left and right separately and calculates their strengths
+
     public String determineWinner(String leftWord, String rightWord) {
         int leftStrength = 0;
         int rightStrength = 0;
@@ -119,9 +133,9 @@ public class AlphabetGame {
         AlphabetGame game = new AlphabetGame();
 
         // Test cases
-        System.out.println("AlphabetWar(\"z\"): " + game.determineWinner("z"));
-        System.out.println("AlphabetWar(\"zdqmwpbs\"): " + game.determineWinner("zdqmwpbs"));
-        System.out.println("AlphabetWar(\"wwwwwwz\"): " + game.determineWinner("wwwwwwz"));
+        System.out.println("AlphabetWar(\"d\"): " + game.determineWinner("d")); // 2>0
+        System.out.println("AlphabetWar(\"zdqmwpb\"): " + game.determineWinner("zdqmwpb")); // 10>9
+        System.out.println("AlphabetWar(\"wwwwwwz\"): " + game.determineWinner("wwwwwwz")); // 24>1
     }
 }
 
