@@ -1,4 +1,6 @@
 // Program 2
+// Alphabet War Game
+
 public class AlphabetGame {
     private int strengthW = 4;
     private int strengthP = 3;
