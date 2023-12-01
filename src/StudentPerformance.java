@@ -12,12 +12,13 @@ public class StudentPerformance {
 
     // Inference - This method is used to read the student marks
     public void readMarks(){
-        Scanner input = new Scanner(System.in); // Invoking the scanner class
-        System.out.println("Enter the marks of 10 students: ");
-        // looping statement to iterate over the array items
-        for(int i =0;i<10;i++){
-            System.out.println("Mark of the student" + (i+1)+":");
-            marks[i] = input.nextInt(); // Reading the integer input with the help of scanner instance
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Enter the marks of 10 students: ");
+            // looping statement to iterate over the array items
+            for(int i =0;i<10;i++){
+                System.out.println("Mark of the student" + (i+1)+":");
+                marks[i] = input.nextInt(); // Reading the integer input with the help of scanner instance
+            }
         }
     }
 
