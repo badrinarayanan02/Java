@@ -1,5 +1,5 @@
 // Lab 1 Program 1
-// Student Performance
+// Analyzing Student performance and finding out four quantities
 
 import java.util.Scanner;
 public class StudentPerformance {

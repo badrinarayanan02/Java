@@ -139,38 +139,4 @@ public class AlphabetGame {
     }
 }
 
-// import java.io.*;
-// class FrequentNumbers
-// {
-//     public static void main(String[] args) throws IOException 
-//     {
-//         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-//         System.out.println("Input Array Size:");
-//         int size=Integer.parseInt(br.readLine());
-//         int[] arr= new int[size];
-//         System.out.println("Input Elements in Array:");
-//         for(int i=0;i<size;i++)
-//             arr[i]=Integer.parseInt(br.readLine());
-//         int max = 0,pos=0,count = 0;
-//         for (int i = 0; i < arr.length; i++)
-//         {
-//             count=0;
-//             for (int j = 0; j < arr.length; j++) 
-//             {
-//                 if (arr[i]==arr[j])
-//                     count++;
-//             }
-//             if (count >=max)
-//             {
-//                 max = count;
-//                 pos=i;
-//             }
-//         }
-
-//         if(max==1)
-//             System.out.println("No Duplicate Element.");
-//         else
-//             System.out.println("Element:"+arr[pos]+" Occourance:"+max);
-//     }
-// }
 
