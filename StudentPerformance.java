@@ -1,4 +1,5 @@
-// Program 1
+// Lab 1 Program 1
+// Student Performance
 
 import java.util.Scanner;
 public class StudentPerformance {
@@ -83,7 +84,7 @@ public class StudentPerformance {
         int freqAtMode = 0;
         for (int mark : marks){
             if (mark == mode){
-                freqAtMode = freqAtMode + 1;
+                freqAtMode = freqAtMode + 1; // frequency++
             }
         }
         return freqAtMode;
