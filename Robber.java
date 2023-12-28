@@ -82,7 +82,7 @@ class ProfRobber extends Robber{
         );
     }
 
-    // Squre houses follows the same logic as row houses
+    // Square houses follows the same logic as row houses
 
     int SquareHouses(int[] houses){
 
